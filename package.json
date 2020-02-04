@@ -1,0 +1,38 @@
+{
+    "name": "nestline-themes",
+    "version": "0.0.1",
+    "description": "This is a colletions of UI themes for the Nestline project. Each style library contains elements to build intuitive and powerful user interfaces (UI)",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack"
+    },
+    "keywords": [
+        "nestline",
+        "CMS",
+        "Content Manager System",
+        "User Interface",
+        "sass",
+        "styles",
+        "css",
+        "ui",
+        "library",
+        "animations",
+        "grids",
+        "typography",
+        "flex"
+    ],
+    "author": "treeindev.net",
+    "license": "ISC",
+    "devDependencies": {
+        "webpack": "^4.0.0",
+        "webpack-cli": "3.2.1",
+        "file-loader": "^2.0.0",
+        "sass-loader": "^7.1.0"
+    },
+    "dependencies": {
+        "node-sass": "^4.5.3",
+        "normalize.css": "8.0.1",
+        "tree-scss": "1.0.0"
+    }
+}
