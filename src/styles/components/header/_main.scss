@@ -1,0 +1,15 @@
+.cmp__header {
+    height: $headerSize;
+    background-color: #ffffff;
+
+    .logotype {
+        width: 140px;
+        padding: 20px;
+        margin-left: 40px;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}

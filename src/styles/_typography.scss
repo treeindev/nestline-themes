@@ -1,0 +1,17 @@
+h1, h2, h3, .h1, .h2, .h3, .h4, .h5 {
+    color: $colours-primary;
+
+    &.light {
+        color: $colours-light;
+    }
+}
+
+p {
+    font-family: $typography-secondary;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+body {
+    font-family: $typography-secondary;
+}

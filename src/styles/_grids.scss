@@ -1,0 +1,18 @@
+// Generic variables for header, sidebar and content sizes.
+$headerSize: 70px;
+$sidebarSize: 250px;
+$contentPaddingSize: 30px;
+
+.layout-main {
+    // Overwrite tree-scss library
+    max-width: initial;
+    margin: initial;
+
+    width: calc( 100% - #{$sidebarSize} - ( #{$contentPaddingSize} * 2 ) );
+    margin-left: $sidebarSize;
+    min-height: 100%;
+    display: block;
+    padding: $contentPaddingSize;
+    height: calc( 100vh - #{$headerSize} - ( #{$contentPaddingSize} * 2 ) );
+    overflow-y: scroll;
+}

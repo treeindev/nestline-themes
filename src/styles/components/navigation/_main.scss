@@ -1,0 +1,7 @@
+.cmp__navigation {
+    width: $sidebarSize;
+    background-color: #ffffff;
+    position: fixed;
+    height: calc( 100vh - #{$headerSize} );
+    top: $headerSize;
+}
