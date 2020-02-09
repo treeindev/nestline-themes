@@ -1,11 +1,16 @@
 .cmp__header {
-    height: $headerSize;
+    // Remove the passing size.
+    height: $headerSize - 40px;
     background-color: #ffffff;
+    display: flex;
+    padding: 20px 0px;
 
     .logotype {
         width: 140px;
-        padding: 20px;
+        padding: 0px 20px;
         margin-left: 40px;
+        // add margin to align content with navigation menu
+        margin-right: $sidebarSize - 140px - 80px;
 
         img {
             width: 100%;
