@@ -1,0 +1,48 @@
+.cmp__searcher {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: -8px;
+    
+    &.active {
+        border: 1px solid #dadada;
+
+        .close {
+            display: block;
+
+            &:hover {
+                background-color: #f1f1f1;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .look {
+        position: absolute;
+        left: 15px;
+        top: 12px;
+        font-size: 20px;
+        color: #969696;
+        cursor: pointer;
+    }
+
+    .close {
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        font-size: 20px;
+        color: #969696;
+        display: none;
+    }
+
+    input {
+        padding-left: 35px;
+        width: 350px;
+        border: none;
+        font-size: 15px;
+        color: #4a4a4a;
+    }
+}
