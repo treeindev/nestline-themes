@@ -1,9 +1,15 @@
 .cmp__header {
     // Remove the passing size.
-    height: $headerSize - 40px;
+    // -40px is to compensate for header's padding.
+    // -1px is to compensate for header's border.
+    height: $headerSize - 40px - 1px;
     background-color: #ffffff;
     display: flex;
     padding: 20px 0px;
+    border-bottom: 1px solid $colours-gray-soft;
+    z-index: 2;
+    position: relative;
+    box-shadow: $shadow-soft;
 
     .logotype {
         width: 140px;
@@ -15,6 +21,41 @@
         img {
             width: 100%;
             display: block;
+            cursor: pointer;
+        }
+    }
+
+    .user {
+        width: auto;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 35px;
+            margin-right: 15px;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+
+        span {
+            padding-right: 15px;
+            font-weight: 600;
+            font-size: 13px;
+            color: $colours-gray;
+        }
+
+        ion-icon {
+            font-size: 25px;
+            color: $colours-secondary;
+            cursor: pointer;
+
+            &:hover {
+                color: darken( $colours-secondary, 10% );
+            }
         }
     }
 }
