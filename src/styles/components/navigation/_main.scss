@@ -6,4 +6,42 @@
     top: $headerSize;
     border-right: 1px solid $colours-gray-soft;
     box-shadow: $shadow-soft;
+
+    ol {
+        list-style: none;
+        margin: 25px 0 0;
+        padding: 0 15px;
+
+        li {
+            padding: 15px;
+            margin: 0;
+            padding-left: 35px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #f3f3f3;
+            }
+
+            &.active {
+                background-color: $colours-secondary;
+                color: #fff;
+                box-shadow: $shadow-vivid;
+
+                &:hover {
+                    background-color: $colours-secondary;
+                }
+            }
+        }
+    }
+
+    ion-icon {
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    span.active {
+        font-weight: 600;
+    }
 }
