@@ -19,6 +19,8 @@
             display: flex;
             align-items: center;
             border-radius: 5px;
+            cursor: pointer;
+            position: relative;
 
             &:hover {
                 background-color: #f3f3f3;
@@ -31,6 +33,22 @@
 
                 &:hover {
                     background-color: $colours-secondary;
+                }
+            }
+
+            &.dropdown {
+                &:before {
+                    border: solid $colours-secondary;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    vertical-align: middle;
+                    content: '';
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    right: 20px;
+                    position: absolute;
+                    top: 20px;
                 }
             }
         }
