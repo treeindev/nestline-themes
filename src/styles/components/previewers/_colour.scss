@@ -1,0 +1,24 @@
+.cmp__previewer.colour {
+    > div {
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+
+    > span:nth-child(2) {
+
+    }
+
+    > span:nth-child(3) {
+
+    }
+
+    &.primary > div {
+        background-color: $colours-primary;
+    }
+
+    &.secondary > div {
+        background-color: $colours-secondary;
+    }
+}
