@@ -9,8 +9,9 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 p {
     font-family: $typography-secondary;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7em;
 }
 
 body {
