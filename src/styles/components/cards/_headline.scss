@@ -1,0 +1,24 @@
+.cmp__cards.headline {
+    padding: 0;
+
+    header, section {
+        padding: $cardsPadding;
+    }
+
+    header {
+        background-color: lighten( $colours-gray-soft, 3% );
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            font-weight: 500;
+        }
+    }
+
+    section {
+
+    }
+}

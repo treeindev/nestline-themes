@@ -1,5 +1,7 @@
+$cardsPadding: 25px;
+
 .cmp__cards {
-    padding: 25px;
+    padding: $cardsPadding;
     background-color: #ffffff;
     display: block;
     border-radius: 6px;
@@ -7,3 +9,5 @@
     box-shadow: $shadow-soft;
     margin-bottom: 40px;
 }
+
+@import 'headline';
