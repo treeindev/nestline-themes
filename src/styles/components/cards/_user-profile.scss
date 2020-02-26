@@ -1,0 +1,41 @@
+.cmp__cards.user-profile {
+    padding: 0;
+
+    header, section {
+        padding: $cardsPadding;
+    }
+
+    > header {
+        padding: 0;
+        max-height: 100px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    > div {
+        text-align: center;
+        margin-top: -50px;
+
+        img {
+            width: 100px;
+            display: block;
+            border-radius: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        h4 {
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+        }
+    }
+
+    > section {
+        padding-top: 10px;
+    }
+}
