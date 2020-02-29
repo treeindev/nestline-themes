@@ -4,9 +4,15 @@
 
     > div:nth-child(1) {
         width: 30%;
+        text-align: center;
+        margin-right: 20px;
+        background-color: lighten( $colours-secondary, 51% );
+        padding: 10px;
+        border-radius: 10px;
 
         ion-icon {
             font-size: 4rem;
+            color: $colours-secondary;
         }
     }
 
@@ -18,10 +24,13 @@
             margin: 0;
             padding: 0;
             margin-bottom: 5px;
+            color: $colours-light;
+            font-weight: 500;
         }
 
         span {
             font-size: 25px;
+            color: $colours-secondary;
         }
     }
 }
