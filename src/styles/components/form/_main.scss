@@ -2,4 +2,29 @@
     input, textarea, span, label {
         display: block;
     }
+
+    input, textarea {
+        border-radius: 5px;
+        border: 1px solid rgba(0,0,0,.2);
+        @include prefix( box-sizing, border-box );
+        @include prefix( box-shadow, 1px 1px 5px 0 rgba(0, 0, 0, 0) );
+        @include prefix( transition, all .3s ease );
+        padding: .75rem;
+        width: 100%;
+        margin: 10px 0;
+
+        &:focus {
+            outline: 0;
+            @include prefix( box-shadow, 1px 1px 5px 0 rgba(0, 0, 0, 0.07) );
+            border: 1px solid $colours-secondary;
+        }
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        min-height: 125px;
+    }
 }
