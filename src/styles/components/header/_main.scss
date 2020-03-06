@@ -57,5 +57,13 @@
                 color: darken( $colours-secondary, 10% );
             }
         }
+
+        .cmp__dropdown {
+            display: none;
+
+            &.show {
+                display: block;
+            }
+        }
     }
 }
