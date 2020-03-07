@@ -1,0 +1,39 @@
+.cmp__radio_group {
+
+    .cmp__radio {
+        @extend .cmp__checkbox;
+    
+        label .checkmark {
+            border-radius: 100%;
+    
+            &:after {
+                left: 4px;
+                top: 4px;
+                width: 10px;
+                height: 10px;
+                background-color: #ffffff;
+                border-radius: 100%;
+                @include prefix(transform, none);
+                border-width: initial;
+                border: none;
+            }
+        }
+    }
+
+    &.invalid {
+        .cmp__radio {
+            label .checkmark {
+                border: 1px solid $colours-error;
+            }
+        }
+    }
+
+    &.inactive {
+        pointer-events: none;
+        opacity: 0.6;
+
+        label {
+            color: $colours-gray;
+        }
+    }
+}
