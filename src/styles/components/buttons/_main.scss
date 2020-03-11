@@ -6,12 +6,47 @@ button {
     font-weight: 500;
     border: none;
     background-color: $colours-secondary;
-    color: #ffffff;
-    padding: 13px 35px;
+    color: $colours-white;
+    padding: 13px 25px;
     border-radius: 4px;
     font-size: 14px;
+    border: 1px solid $colours-secondary;
     
     &:hover {
         background-color: darken( $colours-secondary, 10% );
+    }
+
+    &[disabled] {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    &.inverted {
+        background-color: $colours-white;
+        color: $colours-secondary;
+
+        &:hover {
+            background-color: $colours-secondary;
+            color: $colours-white;
+        }
+    }
+
+    &.secondary {
+        background-color: $colours-primary;
+        border: 1px solid $colours-primary;
+
+        &:hover {
+            background-color: darken( $colours-primary, 10% );
+        }
+
+        &.inverted {
+            background-color: $colours-white;
+            color: $colours-primary;
+    
+            &:hover {
+                background-color: $colours-primary;
+                color: $colours-white;
+            }
+        }
     }
 }
