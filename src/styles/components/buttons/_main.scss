@@ -49,4 +49,40 @@ button {
             }
         }
     }
+
+    &.danger {
+        border: 1px solid darken( $colours-danger, 5% );
+        background-color: $colours-danger;
+
+        &:hover {
+            background-color: darken( $colours-danger, 10% );
+        }
+    }
+    
+    &.warning {
+        border: 1px solid darken( $colours-warning, 5% );
+        background-color: $colours-warning;
+
+        &:hover {
+            background-color: darken( $colours-warning, 10% );
+        }
+    }
+
+    &.success {
+        border: 1px solid darken( $colours-success, 5% );
+        background-color: $colours-success;
+
+        &:hover {
+            background-color: darken( $colours-success, 10% );
+        }
+    }
+
+    &.info {
+        border: 1px solid darken( $colours-info, 5% );
+        background-color: $colours-info;
+
+        &:hover {
+            background-color: darken( $colours-info, 10% );
+        }
+    }
 }
