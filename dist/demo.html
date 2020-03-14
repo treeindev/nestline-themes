@@ -234,6 +234,16 @@
                         <input type="text" placeholder="Enter a reference">
                     </div>
                 </div>
+                <div class="grid">
+                    <div class="group m-r-10">
+                        <label>Locked Text</label>
+                        <input type="text" value="I am a locked text" readonly>
+                    </div>
+                    <div class="group m-l-10 error">
+                        <label>Error state</label>
+                        <input type="text" placeholder="Enter a reference">
+                    </div>
+                </div>
                 <div class="group">
                     <label>Password</label>
                     <input type="password" class="fifth" placeholder="Enter Password">
@@ -243,6 +253,7 @@
                     <input type="text" class="quarter" placeholder="Introduce a URL">
                 </div>
                 <div class="group">
+                    <label>Preferences select</label>
                     <select class="third">
                         <option selected="">select</option>
                         <option>Large select</option>
@@ -251,6 +262,24 @@
                 <div class="group">
                     <label>Additional information</label>
                     <textarea class="half"></textarea>
+                </div>
+                <div class="group">
+                    <label>Range an amount</label>
+                    <div class="cmp__range third">
+                        <input class="range" type="range" min="0" max="100" value="10" step="1" onmousemove="rangevalue1.value=value" />
+                        <output id="rangevalue1">10</output>
+                    </div>
+                </div>
+                <div class="group m-t-30">
+                    <label>Switch to activate</label>
+                    <div class="cmp__switch">
+                        <input type="checkbox" id="switch1">
+                        <label for="switch1">Active this account</label>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="file1">Upload data</label>
+                    <input type="file" class="third" id="file1">
                 </div>
                 <label>Checkboxes</label>
                 <div class="group grid">
