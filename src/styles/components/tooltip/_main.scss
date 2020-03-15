@@ -1,0 +1,33 @@
+.cmp__tooltip {
+
+    a {
+        display: inline;
+        position: relative;
+        
+        &:hover:after {
+            display: flex;
+            background: #292929;
+            border-radius: 8px;
+            color: #fff;
+            content: attr( title );
+            margin: -82px auto 0;
+            font-size: 13px;
+            padding: 13px;
+            width: 220px;
+            bottom: 42px;
+            position: absolute;
+            font-weight: 400;
+            left: -20px;
+        }
+        
+        &:hover:before {
+            border: solid;
+            border-color: #292929 transparent;
+            border-width: 12px 6px 0 6px;
+            content: "";
+            bottom: 30px;
+            position: absolute;
+            right: 2px;
+        }
+    }
+}
