@@ -107,7 +107,7 @@
         <h2>Cards</h2>
         <div class="grid">
             <div class="cmp__cards m-r-30">
-                <h4>Regular card</h4>
+                <h4 class="title">Regular card</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis alias exercitationem sunt dolorum at, commodi velit nam incidunt atque. Quibusdam at libero odio id cupiditate cumque labore corrupti deleniti?</p>
             </div>
             <div class="cmp__cards headline">
@@ -172,7 +172,7 @@
         </div>
         <h2>Buttons</h2>
         <div class="cmp__cards">
-            <h4>Primary</h4>
+            <h4 class="title">Primary</h4>
             <div class="grid">
 				<div class="w-20">
 					<button>Action Button</button>
@@ -184,7 +184,7 @@
 					<button class="inverted">Action Button</button>
 				</div>
             </div>
-            <h4 class="m-t-50">Secondary</h4>
+            <h4 class="m-t-50 title">Secondary</h4>
             <div class="grid">
 				<div class="w-20">
 					<button class="secondary">Action Button</button>
@@ -196,7 +196,7 @@
 					<button class="secondary inverted">Action Button</button>
 				</div>
             </div>
-            <h4 class="m-t-50">Colored</h4>
+            <h4 class="m-t-50 title">Colored</h4>
             <div class="grid">
 				<div class="w-20">
 					<button class="danger">Danger Button</button>
@@ -215,6 +215,7 @@
         <h2>Form elements</h2>
         <div class="cmp__cards">
             <form class="cmp__form">
+                <h4 class="title">Default Aligment</h4>
                 <div class="group">
                     <label>Title of the page</label>
                     <input type="text" placeholder="Title of the new page">
@@ -281,6 +282,8 @@
                     <label for="file1">Upload data</label>
                     <input type="file" class="third" id="file1">
                 </div>
+                <h4 class="m-t-50 title">Horizontal Aligment</h4>
+                <h4 class="m-t-50 title">Additional elements</h4>
                 <label>Checkboxes</label>
                 <div class="group grid">
                     <div>
@@ -383,6 +386,7 @@
         </div>
         <h2>Tooltips</h2>
         <div class="cmp__cards">
+            <h4 class="title">Defaults</h4>
             <div class="grid">
                 <div class="cmp__tooltip">
                     <a href="#" title="Hello from speech bubble!">
@@ -390,13 +394,42 @@
                     </a>
                 </div>
                 <div class="cmp__tooltip">
-                    <ion-icon name="information-circle"></ion-icon>
+                    <a href="#" title="Hello from speech bubble!">
+                        <ion-icon name="information-circle"></ion-icon>
+                    </a>
                 </div>
                 <div class="cmp__tooltip">
-                    <ion-icon name="help-circle"></ion-icon>
+                    <a href="#" title="Hello from speech bubble!">
+                        <ion-icon name="help-circle"></ion-icon>
+                    </a>
                 </div>
                 <div class="cmp__tooltip">
-                    <ion-icon name="warning"></ion-icon>
+                    <a href="#" title="Hello from speech bubble!">
+                        <ion-icon name="warning"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <h4 class="m-t-50 title">Colorised</h4>
+            <div class="grid">
+                <div class="cmp__tooltip">
+                    <a href="#" title="Hello from speech bubble!">
+                        <ion-icon class="secondary" name="alert-circle"></ion-icon>
+                    </a>
+                </div>
+                <div class="cmp__tooltip">
+                    <a href="#" title="Hello from speech bubble!">
+                        <ion-icon class="secondary" name="information-circle"></ion-icon>
+                    </a>
+                </div>
+                <div class="cmp__tooltip">
+                    <a href="#" title="Hello from speech bubble!">
+                        <ion-icon class="secondary" name="help-circle"></ion-icon>
+                    </a>
+                </div>
+                <div class="cmp__tooltip">
+                    <a href="#" title="Hello from speech bubble!">
+                        <ion-icon class="secondary" name="warning"></ion-icon>
+                    </a>
                 </div>
             </div>
         </div>
