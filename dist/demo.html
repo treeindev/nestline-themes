@@ -254,6 +254,14 @@
                     <input type="text" class="quarter" placeholder="Introduce a URL">
                 </div>
                 <div class="group">
+                    <label for="calendar-date">Calendar Date</label>
+                    <input type="date" class="quarter" name="calendar-date">
+                </div>
+                <div class="group">
+                    <label for="calendar-time">Date Time</label>
+                    <input type="datetime-local" class="quarter" name="calendar-time">
+                </div>
+                <div class="group">
                     <label>Preferences select</label>
                     <select class="third">
                         <option selected="">select</option>
@@ -281,6 +289,10 @@
                 <div class="group">
                     <label for="file1">Upload data</label>
                     <input type="file" class="third" id="file1">
+                </div>
+                <div class="group">
+                    <label for="file1">Image previewers</label>
+                    <div class="cmp__image-previewer"></div>
                 </div>
                 <h4 class="m-t-50 title">Horizontal Aligment</h4>
                 <h4 class="m-t-50 title">Additional elements</h4>
@@ -430,6 +442,40 @@
                     <a href="#" title="Hello from speech bubble!">
                         <ion-icon class="secondary" name="warning"></ion-icon>
                     </a>
+                </div>
+            </div>
+        </div>
+        <h2>Loaders</h2>
+        <div class="cmp__cards">
+            <h4 class="title">Defaults</h4>
+            <div class="grid">
+                <div class="cmp__spinner m-g-30"></div>
+                <div class="cmp__spinner secondary m-g-30"></div>
+            </div>
+
+            <h4 class="title">Buttons</h4>
+            <div class="grid">
+                <div class="w-20">
+                    <button class="spinner">
+                        <div class="cmp__spinner"></div>
+                        Loading
+                    </button>
+                </div>
+                <div class="w-20">
+                    <button disabled class="spinner">
+                        <div class="cmp__spinner"></div>
+                        Loading
+                    </button>
+                </div>
+                <div class="w-10">
+                    <button class="spinner">
+                        <div class="cmp__spinner"></div>
+                    </button>
+                </div>
+                <div class="w-10">
+                    <button disabled class="spinner">
+                        <div class="cmp__spinner"></div>
+                    </button>
                 </div>
             </div>
         </div>
