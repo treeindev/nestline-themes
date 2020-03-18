@@ -1,0 +1,35 @@
+.cmp__image-previewer {
+    max-width: 360px;
+    position: relative;
+
+    &.medium {
+        max-width: 260px;
+    }
+
+    &.short {
+        max-width: 160px;
+    }
+
+    &.editing {
+        ion-icon {
+            position: absolute;
+            color: #4c4c4c;
+            right: -8px;
+            top: -8px;
+            font-size: 1.75rem;
+            background-color: #fff;
+            border-radius: 100%;
+            cursor: pointer;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        border-radius: 3px;
+    }
+}

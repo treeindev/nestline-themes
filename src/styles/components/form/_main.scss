@@ -57,6 +57,20 @@
 
     .group {
         margin-bottom: 20px;
+
+        &.row {
+            display: flex;
+
+            label {
+                width: 20%;
+                margin-right: 30px;
+                margin-top: 23px;
+            }
+
+            input, textarea, select {
+                width: 70%;
+            }
+        }
     }
 
     label {
@@ -89,3 +103,4 @@
 @import 'radio-group';
 @import 'range';
 @import 'switch';
+@import 'image-previewer';
