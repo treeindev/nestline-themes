@@ -1,0 +1,49 @@
+.cmp__pagination {
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+
+        li {
+            padding: 0;
+            margin: 0;
+        }
+        
+        a {
+            position: relative;
+            display: block;
+            padding: 10px;
+            margin-left: -1px;
+            line-height: 1.25;
+            color: $colours-secondary;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            font-weight: 500;
+            font-size: 13px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $colours-background;
+            }
+
+            &.active {
+                color: #fff;
+                background-color: $colours-secondary;
+                border: 1px solid $colours-secondary;
+            }
+
+            &.disabled {
+                pointer-events: none;
+                color: $colours-gray;
+            }
+        }
+    }
+
+    &.center {
+        ul {
+            justify-content: center;
+        }
+    }
+}
