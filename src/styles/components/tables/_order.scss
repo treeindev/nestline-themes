@@ -1,0 +1,51 @@
+.cmp__table.order {
+
+    > header {
+        padding: 0px;
+        border-left: 1px solid lighten( $colours-light, 30% );
+
+        div {
+            padding: 20px;
+            position: relative;
+            border-right: 1px solid lighten( $colours-light, 30% );
+            cursor: pointer;
+
+            &:before, &:after {
+                position: absolute;
+                color: #ababab;
+            }
+
+            &:before {
+                right: 16px;
+                content: "\2191";
+            }
+
+            &:after {
+                right: 10px;
+                content: "\2193";
+            }
+
+            &.active-up {
+                &:before {
+                    color: $colours-primary;
+                }
+            }
+
+            &.active-down {
+                &:before {
+                    color: $colours-primary;
+                }
+            }
+        }
+    }
+
+    .content {
+        & > div {
+            padding: 0px;
+
+            > div {
+                padding: 20px;
+            }
+        }
+    }
+}

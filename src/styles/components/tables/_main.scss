@@ -1,0 +1,46 @@
+.cmp__table {
+
+    > header {
+        display: flex;
+        background-color: $colours-background;
+        padding: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 13px;
+        border-top: 1px solid lighten( $colours-light, 30% );
+        border-bottom: 1px solid lighten( $colours-light, 30% );
+    }
+
+    .content {
+
+        &.hover {
+            > div:hover {
+                background-color: $colours-background;
+            }
+        }
+
+        & > div {
+            display: flex;
+            padding: 20px;
+            border-bottom: 1px solid lighten( $colours-light, 30% );
+            font-size: 13px;
+        }
+
+        &.bordered {
+            & > div {
+                border-left: 1px solid lighten( $colours-light, 30% );
+
+                > div {
+                    border-right: 1px solid lighten( $colours-light, 30% );
+                }
+            }
+        }
+    }
+
+    .center {
+        text-align: center;
+    }
+}
+
+@import 'order';
+@import 'small';
