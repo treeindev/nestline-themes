@@ -33,21 +33,44 @@
     <aside class="cmp__navigation">
         <nav>
             <ol>
-                <li class="active">
-                    <ion-icon name="desktop-outline"></ion-icon>
-                    <span>Dashboard</span>
+                <li class="active open">
+                    <div>
+                        <ion-icon name="desktop-outline"></ion-icon>
+                        <span>Dashboard</span>
+                        <ion-icon class="up" name="chevron-up-outline"></ion-icon>
+                    </div>
+                    <ol>
+                        <li class="active">
+                            <span>Charts</span>
+                        </li>
+                        <li>
+                            <span>Entries</span>
+                        </li>
+                        <li>
+                            <span>Analytics</span>
+                        </li>
+                        <li>
+                            <span>Processes</span>
+                        </li>
+                    </ol>
                 </li>
                 <li>
-                    <ion-icon name="file-tray-stacked-outline"></ion-icon>
-                    <span>Pages</span>
+                    <div>
+                        <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                        <span>Pages</span>
+                    </div>
                 </li>
                 <li>
-                    <ion-icon name="bar-chart-outline"></ion-icon>
-                    <span>Analytics</span>
+                    <div>
+                        <ion-icon name="bar-chart-outline"></ion-icon>
+                        <span>Analytics</span>
+                    </div>
                 </li>
                 <li>
-                    <ion-icon name="build-outline"></ion-icon>
-                    <span>Settings</span>
+                    <div>
+                        <ion-icon name="build-outline"></ion-icon>
+                        <span>Settings</span>
+                    </div>
                 </li>
             </ol>
         </nav>

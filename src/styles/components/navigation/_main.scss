@@ -10,33 +10,45 @@
     ol {
         list-style: none;
         margin: 25px 0 0;
-        padding: 0 15px;
+        padding: 0;
 
         li {
-            padding: 15px;
-            margin: 0;
-            padding-left: 35px;
-            display: flex;
-            align-items: center;
-            border-radius: 5px;
-            cursor: pointer;
-            position: relative;
 
-            &:hover {
-                background-color: #f3f3f3;
-            }
-
-            &.active {
-                background-color: $colours-secondary;
-                color: #fff;
-                box-shadow: $shadow-vivid;
+            > div {
+                padding: 12px 15px;
+                margin: 0;
+                padding-left: 35px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
 
                 &:hover {
-                    background-color: $colours-secondary;
+                    background-color: #f3f3f3;
+                }
+
+                .up {
+                    position: absolute;
+                    right: 20px;
+                    @include prefix( transition, all 1s ease );
+                    padding: 0;
                 }
             }
 
-            &.dropdown {
+            &.active {
+
+                > div {
+                    background-color: $colours-secondary;
+                    color: #fff;
+                    box-shadow: $shadow-vivid;
+
+                    &:hover {
+                        background-color: $colours-secondary;
+                    }
+                }
+            }
+
+            &.dropdown > div {
                 &:before {
                     border: solid $colours-secondary;
                     border-width: 0 3px 3px 0;
@@ -49,6 +61,41 @@
                     right: 20px;
                     position: absolute;
                     top: 20px;
+                }
+            }
+
+            &.open {
+
+                > ol {
+                    display: block;
+                }
+
+                .up {
+                    transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                }
+            }
+
+            > ol {
+                display: none;
+                margin: 0;
+                padding: 10px 20px 10px 40px;
+                background-color: $colours-background;
+                border-bottom: 1px solid darken( $colours-background, 10% );
+
+                li {
+                    margin: 0;
+                    padding: 10px 0px;
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &:hover, &.active {
+                        color: $colours-secondary;
+                    }
                 }
             }
         }
