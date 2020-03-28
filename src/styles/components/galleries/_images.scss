@@ -1,0 +1,21 @@
+.cmp__gallery.images {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        width: 23%;
+        padding: 1%;
+    }
+
+    img {
+        display: block;
+        width: 100%;;
+    }
+
+    &.large {
+        div {
+            width: 31%;
+            padding: 1%;
+        }
+    }
+}
