@@ -1,0 +1,29 @@
+.cmp__modal {
+
+    &.active {
+        display: block;
+        opacity: 1;
+    }
+
+    header {
+        margin-bottom: 40px;
+
+        h4 {
+            font-size: 23px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    }
+
+    footer {
+        display: flex;
+        border-top: 1px solid #dedede;
+        padding-top: 30px;
+        margin-top: 40px;
+
+        button {
+            padding: 10px 20px;
+            margin-right: 20px;
+        }
+    }
+}
