@@ -1452,7 +1452,7 @@
         </div>
         <h2>Modals</h2>
         <div class="cmp__cards">
-            
+            <button id="show-modal">Show modal</button>
         </div>
         <h2>Graphs and Analytics</h2>
         <div class="cmp__cards">
@@ -1460,7 +1460,7 @@
         </div>
         
     </section>
-    <div class="cmp__modal">
+    <div id="modal-example" class="cmp__modal">
         <div class="frame">
             <div class="container">
                 <header>
@@ -1499,6 +1499,12 @@
                 ]
             },
             theme: 'snow'
+        });
+
+        // Show modal
+        document.getElementById( 'show-modal' ).addEventListener( "click", () => {
+            const modal = document.getElementById('modal-example');
+            modal.classList.add( "active" );
         });
     </script>
 </body>
