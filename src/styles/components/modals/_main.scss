@@ -1,5 +1,13 @@
 .cmp__modal {
 
+    .close {
+        position: absolute;
+        right: 12px;
+        font-size: 27px;
+        top: 12px;
+        cursor: pointer;
+    }
+
     &.active {
         display: block;
         opacity: 1;

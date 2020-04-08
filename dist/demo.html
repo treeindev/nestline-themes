@@ -1463,6 +1463,7 @@
     <div id="modal-example" class="cmp__modal">
         <div class="frame">
             <div class="container">
+                <ion-icon name="close" class="close" id="close-modal-example"></ion-icon>
                 <header>
                     <h4>This is a header of a modal</h4>
                 </header>
@@ -1501,10 +1502,15 @@
             theme: 'snow'
         });
 
-        // Show modal
+        // Show and hide modal
         document.getElementById( 'show-modal' ).addEventListener( "click", () => {
             const modal = document.getElementById('modal-example');
             modal.classList.add( "active" );
+        });
+
+        document.getElementById( 'close-modal-example' ).addEventListener( "click", () => {
+            const modal = document.getElementById('modal-example');
+            modal.classList.remove( "active" );
         });
     </script>
 </body>
