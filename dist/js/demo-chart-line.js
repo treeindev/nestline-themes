@@ -1,7 +1,8 @@
 // based on prepared DOM, initialize echarts instance
-var myChart = echarts.init( document.getElementById( 'js-chart-line-1' ) );
+var myChart1 = echarts.init( document.getElementById( 'js-chart-line-1' ) );
+var myChart2 = echarts.init( document.getElementById( 'js-chart-line-2' ) );
 
-var option = {
+var option1 = {
     title: {
         text: 'Chart lines'
     },
@@ -85,5 +86,20 @@ var option = {
     ]
 };
 
+var option2 = {
+    xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line'
+    }]
+};
+
 // use configuration item and data specified to show chart
-myChart.setOption(option);
+myChart1.setOption(option1);
+myChart2.setOption(option2);
