@@ -1,0 +1,51 @@
+.cmp__login {
+    @extend .grid;
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 15px;
+
+    h1 {
+        color: $colours-secondary;
+    }
+
+    > div:nth-child(1) {
+        width: 60%;
+        margin-right: 5%;
+    }
+
+    > div:nth-child(2) {
+        width: 40%;
+        
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .cmp__form {
+        margin-top: 30px;
+
+        input {
+            max-width: 300px;
+        }
+
+        .cmp__checkbox {
+            margin: 20px 0px 15px;
+        }
+
+        button {
+            padding: 12px 15px;
+        }
+
+        .forgot {
+            font-size: 13px;
+            display: block;
+            margin-top: 13px;
+            color: $colours-gray;
+
+            a {
+                color: $colours-secondary;
+            }
+        }
+    }
+}
