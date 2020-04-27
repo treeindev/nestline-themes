@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 This file is similar to the format suggested by [Keep a CHANGELOG](https://github.com/olivierlacan/keep-a-changelog).
 
+## 1.1.0
+- Downgrade ionicons v5 to v4 and use it native scss.
+
 ## 1.0.1
 - Include new chart
 

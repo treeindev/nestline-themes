@@ -1,4 +1,7 @@
-ion-icon {
+.icon {
+    line-height: 10px;
+    font-size: 30px;
+    
     &.primary {
         color: $colours-primary;
     }
