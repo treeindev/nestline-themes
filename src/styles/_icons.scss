@@ -1,6 +1,7 @@
 .icon {
     line-height: 10px;
     font-size: 30px;
+    display: inline-block;
     
     &.primary {
         color: $colours-primary;
