@@ -9,13 +9,15 @@
 
     ol {
         list-style: none;
-        margin: 25px 0 0;
+        margin: 0;
         padding: 0;
 
         li {
+            padding: 0;
+            margin: 0;
 
             > div {
-                padding: 12px 15px;
+                padding: 15px 15px;
                 margin: 0;
                 padding-left: 35px;
                 display: flex;
@@ -32,6 +34,7 @@
                     right: 20px;
                     @include prefix( transition, all 1s ease );
                     padding: 0;
+                    @include prefix( transform, rotate(-90deg) );
                 }
             }
 
@@ -66,13 +69,18 @@
 
             &.open {
 
+                > div {
+                    border-bottom: 1px solid darken( $colours-background, 10% );
+                }
+
                 > ol {
                     display: block;
+                    @include prefix( transition, all .3s ease );
+                    overflow: hidden;
                 }
 
                 .up {
-                    transform: rotate(180deg);
-                    -webkit-transform: rotate(180deg);
+                    @include prefix( transform, rotate(0deg) );
                 }
             }
 
