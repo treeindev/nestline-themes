@@ -4,10 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 This file is similar to the format suggested by [Keep a CHANGELOG](https://github.com/olivierlacan/keep-a-changelog).
 
+## 1.1.2
+- Fix background colours of navigation menu.
+
 ## 1.1.1 - 21/05/2020
 - Fixes on navigation menu styles.
 
-## 1.1.0
+## 1.1.0 - 05/05/2020
 - Downgrade ionicons v5 to v4 and use it native scss.
 
 ## 1.0.1

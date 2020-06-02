@@ -24,9 +24,10 @@
                 align-items: center;
                 cursor: pointer;
                 position: relative;
+                background-color: $colours-white;
 
                 &:hover {
-                    background-color: #f3f3f3;
+                    background-color: darken( $colours-white, 10% );
                 }
 
                 .up {
