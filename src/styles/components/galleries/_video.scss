@@ -1,0 +1,60 @@
+.cmp__gallery.video {
+    iframe {
+        overflow: hidden;
+        box-shadow: $shadow-medium;
+    }
+
+    &.presentation {
+        margin: 0 auto;
+        display: block;
+        width: 64%;
+
+        iframe {
+            width: 962px;
+            height: 538px;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+    
+            img {
+                display: block;
+                width: 35px;
+                margin-right: 15px;
+                border-radius: 100%;
+                overflow: hidden;
+            }
+    
+            a {
+                color: $colours-secondary;
+                margin-left: 20px;
+            }
+        }
+
+        .navigation {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            margin-top: 20px;
+
+            li {
+                opacity: 0.5;
+                padding: 10px 30px;
+                border-bottom: 1px solid $colours-gray-soft;
+                cursor: pointer;
+
+                &.hover, &.active {
+                    opacity: 1;
+                    border-bottom: 2px solid $colours-secondary;
+                }
+            }
+        }
+    }
+}
