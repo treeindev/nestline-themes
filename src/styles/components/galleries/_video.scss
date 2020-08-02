@@ -7,7 +7,7 @@
     &.presentation {
         margin: 0 auto;
         display: block;
-        width: 64%;
+        width: 85%;
 
         iframe {
             width: 962px;
@@ -35,6 +35,10 @@
                 color: $colours-secondary;
                 margin-left: 20px;
             }
+
+            span {
+                color: $colours-gray;
+            }
         }
 
         .navigation {
@@ -50,7 +54,7 @@
                 border-bottom: 1px solid $colours-gray-soft;
                 cursor: pointer;
 
-                &.hover, &.active {
+                &:hover, &.active {
                     opacity: 1;
                     border-bottom: 2px solid $colours-secondary;
                 }

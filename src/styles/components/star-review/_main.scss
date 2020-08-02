@@ -1,0 +1,66 @@
+// This component is based on Font Awesome.
+// Dependency is currently hosted at: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+.cmp__star-review {
+    display: block;
+    text-align: center;
+    
+    > span {
+        color: $colours-gray;
+        display: block;
+        max-width: 40%;
+        margin: 0 auto;
+    }
+    
+    .h3 {
+        font-size: 50px;
+        color: $colours-primary;
+        margin-bottom: 0px;
+    }
+
+    .fa-star { font-size: 20px; }
+    .small .fa-star { font-size: 16px; }
+    .large .fa-star { font-size: 30px; }
+    
+    .stars {
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 10px;
+        
+        .fa-star {
+            padding: 0px 3px;
+            color: $colours-secondary;
+
+            &.checked ~ .fa-star {
+                color: $colours-primary;
+            }
+        }
+
+        &.dynamic {
+            cursor: pointer;
+
+            &:hover {
+                .fa-star {
+                    color: $colours-secondary;
+                }
+            }
+
+            .fa-star {
+                color: $colours-primary;
+
+                &:hover ~ .fa-star {
+                    color: $colours-primary;
+                }
+            }
+        }
+    }
+
+    .cmp__form {
+        width: 230px;
+        display: block;
+        margin: 0 auto;
+
+        button {
+            margin: 0 auto;
+        }
+    }
+}
