@@ -1,0 +1,47 @@
+.cmp__cards.search-results {
+    display: flex;
+    border: 1px solid $colours-gray-light;
+    border-left: 5px solid $colours-secondary;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+    &:hover {
+        border: 1px solid $colours-secondary;
+        border-left: 5px solid $colours-secondary;
+    }
+
+    .thumbnail {
+        max-width: 130px;
+        max-height: 130px;
+        overflow: hidden;
+        margin-right: 20px;
+        border-radius: 5px;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            
+            &.wider {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+
+    h3 {
+        margin-bottom: 10px;
+    }
+    
+    span {
+        font-size: 13px;
+        color: $colours-light;
+        display: block;
+    }
+    
+    p {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        color: $colours-gray;
+    }
+}
