@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 15px;
 
-    h1 {
+    h1, h3 {
         color: $colours-secondary;
     }
 
@@ -24,6 +24,25 @@
 
     .cmp__form {
         margin-top: 30px;
+
+        .submit {
+            display: flex;
+            align-items: center;
+
+            button {
+                margin-right: 15px;
+            }
+
+            span {
+                color: $colours-error;
+                font-size: 12px;
+                font-weight: 700;
+
+                &.hidden {
+                    display: none;
+                }
+            }
+        }
 
         input {
             max-width: 300px;

@@ -1,0 +1,29 @@
+.cmp__gallery.avatars {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div {
+        margin: 30px;
+        cursor: pointer;
+        
+        &:hover img {
+            box-shadow: $shadow-medium-high;
+        }
+        
+        img {
+            width: 150px;
+            border-radius: 100%;
+            overflow: hidden;
+            box-shadow: transparent;
+            @include prefix( transition, all .3s ease );
+        }
+
+        span {
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+    }
+}
