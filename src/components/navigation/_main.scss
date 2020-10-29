@@ -6,6 +6,7 @@
     top: $headerSize;
     border-right: 1px solid $colours-gray-soft;
     box-shadow: $shadow-soft;
+    overflow: auto;
 
     &.show-y-scroll { overflow-y: scroll; }
     &.show-x-scroll { overflow-x: scroll; }
