@@ -46,6 +46,10 @@
 
         input {
             max-width: 300px;
+
+            &.invalid {
+                border-bottom: 1px solid red;
+            }
         }
 
         .cmp__checkbox {

@@ -17,3 +17,17 @@ p {
 body {
     font-family: $typography-secondary;
 }
+
+a {
+    &.secondary {
+        color: $colours-secondary;
+
+        &:hover {
+            color: darken($colours-secondary, 10%);
+        }
+        
+        &.underscored {
+            border-bottom: 1px solid $colours-secondary;
+        }
+    }
+}
