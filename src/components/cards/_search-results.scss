@@ -4,6 +4,38 @@
     border-left: 5px solid $colours-secondary;
     cursor: pointer;
     margin-bottom: 20px;
+
+    &.gallery-standard {
+        width: 28%;
+        margin: 0 0.5% 1%;
+        display: block;
+        border-left: 1px solid $colours-gray-light;
+
+        @media (min-width: $device-small) {
+            width: 24%;
+        }
+
+        @media (min-width: $device-laptop) {
+            width: 26%;
+        }
+
+        @media (min-width: $device-large) {
+            width: 28%;
+        }
+
+        &:hover {
+            border: 1px solid $colours-secondary;
+            border-left: 1px solid $colours-secondary;
+        }
+
+        .thumbnail {
+            width: 100%;
+            max-width: none;
+            max-height: 310px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+    }
     
     &:hover {
         border: 1px solid $colours-secondary;
