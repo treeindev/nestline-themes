@@ -6,10 +6,9 @@ $contentPaddingSize: 30px;
 .layout-main {
     // Overwrite tree-scss library
     max-width: initial;
-    margin: initial;
+    margin: 0 0 0 $sidebarSize;
 
     width: calc( 100% - #{$sidebarSize} - ( #{$contentPaddingSize} * 2 ) );
-    margin-left: $sidebarSize;
     min-height: 100%;
     display: block;
     padding: $contentPaddingSize;

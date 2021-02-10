@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 This file is similar to the format suggested by [Keep a CHANGELOG](https://github.com/olivierlacan/keep-a-changelog).
 
+## 1.4.1
+- Add additional UI layout for seach cards.
+- Fix overflow bug on Angular's build.
+
 ## 1.4.0
 - Include gallery style for the search results cards.
 

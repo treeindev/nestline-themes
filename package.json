@@ -1,6 +1,6 @@
 {
     "name": "nestline-themes",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "This is a colletion of UI themes for the Nestline project. Each style library contains elements to build intuitive and powerful user interfaces (UI)",
     "main": "src/index.js",
     "scripts": {
